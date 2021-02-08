@@ -3,28 +3,116 @@
   padding: 0;
   box-sizing: border-box;
 }
-*[class*="col_"]{
-  background-color: pink;
+.box_float{
+  clear:both;
+  content: "";
+  display: table;
+}
+.float_left{
+  float: left;
+}
+.float_right{
+  float: right;
+}
+/* nav */
+nav{
+  height: 70px;
+  background-color: #CCCCCC;
+  width: 100%;
+}
+nav img{
+  height: 70px;
+}
+/* nav */
+/* main */
+main{
+  padding: 50px;
+  background-color: black;
+}
+main .container{
+  margin: 0 auto;
+  height: 600px;
+  width: 600px;
+  border: 5px solid yellow;
+  box-sizing: content-box;
+}
+main .row > *{
   border: 1px solid black;
-  height: 150px;
   position: relative;
 }
-*[class*="col_"] span{
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
+.bomb{
+  background-image: url(../img/bomb.png);
+  height: 50px;
+  background-position: center;
+  background-size: 100%;
 }
-.row .row{
-  padding: 5px;
-  height: 100%
+.boom{
+  background-image: url(../img/boom.png);
+  height: 50px;
+  background-position: center;
+  background-size: 100%;
 }
-.row .row  .box{
-  height: 100%
+.none{
+  background-image: url(../img/none.png);
+  height: 50px;
+  background-position: center;
+  background-size: 100%;
 }
-.row .row .box [class*="col_"]{
-  text-align: center;
-  border: 1px solid white;
-  height: 100%;
-  background-color: #F07F80;
+.nope{
+  background-color: #CCCCCC;
+  height: 50px;
+  background-position: center;
+  background-size: 100%;
+}
+.nb_1{
+  height: 50px;
+  background-color: #CCCCCC;
+}
+.nb_1 span{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 25px;
+color: blue;
+font-weight: bolder;
+}
+.nb_2{
+  height: 50px;
+  background-color: #CCCCCC;
+}
+.nb_2 span{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 25px;
+color: green;
+font-weight: bolder;
+}
+.nb_3{
+  height: 50px;
+  background-color: #CCCCCC;
+}
+.nb_3 span{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 25px;
+color: red;
+font-weight: bolder;
+}
+.nb_4{
+  height: 50px;
+  background-color: #CCCCCC;
+}
+.nb_4 span{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 25px;
+color: purple;
+font-weight: bolder;
 }
